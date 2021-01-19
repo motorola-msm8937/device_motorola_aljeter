@@ -37,6 +37,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/idc/uinput-egis.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/uinput-egis.idc
 
+# Mobile Data
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.com.android.mobiledata=false
+
 # NFC
 PRODUCT_PACKAGES += \
     libnfc \
