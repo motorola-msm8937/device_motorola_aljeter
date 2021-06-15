@@ -727,6 +727,10 @@ vendor/lib64/libkeymasterutils.so|75d58b3f6aea66220c3352e4bef33dad9333fd1d
 # NFC
 vendor/lib/libpn553_fw.so
 
+# RIL2
+vendor/lib/libmdmdetect.so
+vendor/lib/libqmiservices.so
+
 # Sensors - from deen_sprout - QPKS30.54-22-11
 vendor/bin/sensors.qti|5f43a818c4c682956bed031b4fc9583d42b7f70a
 vendor/lib/libsensor1.so|637aa4ec588533a3dcddb6ed95a7434f1f6b7d59
