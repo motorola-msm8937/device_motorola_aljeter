@@ -13,6 +13,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# GApps
+$(call inherit-product, vendor/partner_gms/products/gms_go_2gb.mk)
+BUILD_GMS=yes
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_jeter
 PRODUCT_DEVICE := jeter
@@ -31,3 +35,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 BUILD_FINGERPRINT := motorola/jeter/jeter:9/PPPS29.118-57-5/d3be1:user/release-keys
 
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
+
+# LOS-Modded
+TARGET_MOTOCAM3_SUPPORTED := false
