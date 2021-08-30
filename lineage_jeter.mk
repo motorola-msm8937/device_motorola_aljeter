@@ -24,11 +24,15 @@ PRODUCT_SYSTEM_PROPERTY_BLACKLIST += \
     ro.product.model \
     ro.product.name
 
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="jeter-user 9 PPPS29.118-57-5 d3be1 release-keys" \
-    PRODUCT_NAME="jeter"
+# Build fingerprint
+BUILD_FINGERPRINT := google/redfin/redfin:11/RQ3A.210805.001.A1/7474174:user/release-keys
+BUILD_DESCRIPTION := redfin-user 11 RQ3A.210805.001.A1/7474174 release-keys
 
-BUILD_FINGERPRINT := motorola/jeter/jeter:9/PPPS29.118-57-5/d3be1:user/release-keys
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.build.fingerprint=$(BUILD_FINGERPRINT)
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRIVATE_BUILD_DESC="$(BUILD_DESCRIPTION)"
 
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
