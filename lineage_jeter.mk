@@ -25,8 +25,8 @@ PRODUCT_SYSTEM_PROPERTY_BLACKLIST += \
     ro.product.name
 
 # Build fingerprint
-BUILD_FINGERPRINT := google/redfin/redfin:11/RQ3A.210805.001.A1/7474174:user/release-keys
-BUILD_DESCRIPTION := redfin-user 11 RQ3A.210805.001.A1/7474174 release-keys
+BUILD_FINGERPRINT := google/redfin/redfin:11/RQ3A.210905.001.A1/7511028:user/release-keys
+BUILD_DESCRIPTION := redfin-user 11 RQ3A.210905.001.A1/7511028 release-keys
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.build.fingerprint=$(BUILD_FINGERPRINT)
